@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+    <title>Dalia ~ Furniture </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <!-- Main Header -->
+    <header class="main-header">    
+        <!-- Logo Holder -->
+         <div class="log-holder">
+            <a href="Index.html">
+                <img src="img/DaliaLogo.jpeg" alt="Dalia Furnature Buissness" >
+            </a>
+         </div>
+        <!-- Logo Holder -->
+        <!-- Search Holder -->
+         <div class="search-holder">
+            <form action="" method="get">
+                <input type="search" name="search" placeholder="Search for..">
+                <button type="submit">Search</button>
+            </form>
+         </div>
+        <!-- Search Holder -->
+    </header>
+    <!-- Main Header -->
+    <!-- Main Menu -->
+     <nav class="main-menu">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="Services.html">Services</a></li>
+                <ul class="drop">
+                    <li><a href="Services">Service One</a></li>
+                    <li><a href="Services">Service Two</a></li>
+                    <li><a href="Services">Service Three</a></li>
+                </ul>
+            </li>
+            <li><a href="Products.html">Products</a>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+     </nav>
+    <!-- Main Menu -->
+
+    <!-- Services Holder -->
+     <section class="services-holder">
+        <article class="service">
+            <h3>Service One</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sapiente non quibusdam iusto.</p>
+            <a href="#">Read more</a>
+        </article>
+        <article class="service">
+            <h3>Service Two</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sapiente non quibusdam iusto.</p>
+            <a href="#">Read more</a>
+        </article>
+        <article class="service">
+            <h3>Service Three</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sapiente non quibusdam iusto.</p>
+            <a href="#">Read more</a>
+        </article>
+        <article class="service">
+            <h3>Service Four</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sapiente non quibusdam iusto.</p>
+            <a href="#">Read more</a>
+        </article>
+        <article class="service">
+            <h3>Service Five</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sapiente non quibusdam iusto.</p>
+            <a href="#">Read more</a>
+        </article>
+        <article class="service">
+            <h3>Service Six</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti sapiente non quibusdam iusto.</p>
+            <a href="#">Read more</a>
+        </article>
+     </section>
+    <!-- Services Holder -->
+
+    <!-- Footer widgets -->
+    <section class="Footer-widget-holder">
+        <div class="footer-widget">
+            <a href="Index.html">
+                <img src="img/DaliaLogo.jpeg" alt="Dalia Furnature Buissness" >
+            </a>
+            <h3>Address</h3>
+            <address>
+                Abu Shagara - Sa'ad Ibn Abi Waqas Street - Al Nuaimi Tower
+            </address>
+        </div>
+        <div class="footer-widget">
+            <h4>Sitemap</h4>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>Sitemap</h4>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>Sitemap</h4>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>Sitemap</h4>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- Footer widgets -->
+    <!-- Site Footer -->
+    <footer class="Site-Footer">
+        <p>
+            <small>Copyright &copy; 2025</small>
+        </p>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+<script> 
+    $(document).ready(function() {
+        $('#adaptive').lightSlider({
+            adaptiveHeight:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+        });
+    });
+</script>
+</body>
+</html>
