@@ -37,26 +37,61 @@
   <div id="myresult" class="img-zoom-result"></div>
         
 <style>
-    * {box-sizing: border-box;}
-    
-    .img-zoom-container {
-      position: relative;
-    }
-    
-    .img-zoom-lens {
-      position: absolute;
-      border: 1px solid #d4d4d4;
-      /*set the size of the lens:*/
-      width: 40px;
-      height: 40px;
-    }
-    
-    .img-zoom-result {
-      border: 1px solid #d4d4d4;
-      /*set the size of the result div:*/
-      width: 300px;
-      height: 300px;
-    }
+  * {box-sizing: border-box;}
+
+  .myimage{
+    margin-left: 150%;
+  }
+
+  .container {
+      max-width: 1200px;
+      width: 95%;
+      height: auto;
+      margin: 10px auto;
+      background-color: white;
+      border: 1px solid gainsboro;
+      box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+  }
+
+  .main-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px;
+  }
+
+  .search-holder form > input[type="search"] {
+    border: 1px solid gainsboro;
+    padding: 10px;
+  }
+
+  .search-holder form > button[type="submit"] {
+      background-color: black;
+      color: white;
+      padding: 11px;
+      border: 0px;
+      margin-left: -5px;
+  }
+
+
+
+  .img-zoom-container {
+    position: relative;
+  }
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+}
 </style>
 
   
