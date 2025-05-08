@@ -16,7 +16,7 @@
 <div class="container">
     <!-- Main Header -->
     <header class="main-header">    
-        <!-- Logo Holder  -->
+        <!-- Logo Holder -->
          <div class="log-holder">
             <a href="/home/mint1/Ibrahim(New)/Dalia-Furnature-Website/HTML/Index.html">
                 <img src="/home/mint1/Ibrahim(New)/Dalia-Furnature-Website/HTML/img/DaliaLogo.jpeg" alt="Dalia Furnature Buissness" >
@@ -32,13 +32,36 @@
          </div>
         <!-- Search Holder -->
 
-<div class="img-zoom-container">
-    <img id="myimage" src="https://ibrahimm1712.github.io/Dalia-Furniture-7/HTML/img/download(1).jpeg" width="300" height="240" alt="Product-One">
-    <div id="myresult" class="img-zoom-result"></div>
-</div>
+ <div class="img-zoom-container">
+  <img id="myimage" src="img_girl.jpg" width="300" height="240" alt="Girl">
+  <div id="myresult" class="img-zoom-result"></div>
+        
+<style>
+* {box-sizing: border-box;}
 
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+}
+</style>
+
+  
 <script>
-  function imageZoom(imgID, resultID) {
+function imageZoom(imgID, resultID) {
       var img, lens, result, cx, cy;
       img = document.getElementById(imgID);
       result = document.getElementById(resultID);
@@ -78,8 +101,8 @@
         lens.style.top = y + "px";
         /* Display what the lens "sees": */
         result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
-      }
-      function getCursorPos(e) {
+  }
+  function getCursorPos(e) {
         var a, x = 0, y = 0;
         e = e || window.event;
         /* Get the x and y positions of the image: */
@@ -91,65 +114,9 @@
         x = x - window.pageXOffset;
         y = y - window.pageYOffset;
         return {x : x, y : y};
-      }
-    }
-imageZoom("myimage", "myresult"); 
-</script>
-
-<style>
-  * {box-sizing: border-box;}
-
-  .myimage{
-    margin-left: 150%;
   }
-
-  .container {
-      max-width: 1200px;
-      width: 95%;
-      height: auto;
-      margin: 10px auto;
-      background-color: white;
-      border: 1px solid gainsboro;
-      box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
-  }
-
-  .main-header {
-      display: flex;
-      justify-content: space-between;
-      padding: 25px;
-  }
-
-  .search-holder form > input[type="search"] {
-    border: 1px solid gainsboro;
-    padding: 10px;
-  }
-
-  .search-holder form > button[type="submit"] {
-      background-color: black;
-      color: white;
-      padding: 11px;
-      border: 0px;
-      margin-left: -5px;
-  }
-
-
-
-  .img-zoom-container {
-    position: relative;
-  }
-
-.img-zoom-lens {
-  position: absolute;
-  border: 1px solid #d4d4d4;
-  /*set the size of the lens:*/
-  width: 40px;
-  height: 40px;
-}
-
-.img-zoom-result {
-  border: 1px solid #d4d4d4;
-  /*set the size of the result div:*/
-  width: 300px;
-  height: 300px;
-}
-</style>
+<script>
+    
+<script>
+imageZoom("myimage", "myresult");
+</script> 
